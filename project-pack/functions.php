@@ -60,32 +60,6 @@ function ic_display_quantity_minus() {
 // add_action( 'woocommerce_after_quantity_input_field', 'ic_display_quantity_plus', 10, 2 );
 // add_action( 'woocommerce_before_quantity_input_field', 'ic_display_quantity_minus' );
 
-
-
-add_action('wp_head','show_minicart_custom');
-function show_minicart_custom() {
-    ?>
-    <div class="over-lay-custom-mini-cart"></div>
-    <div class="ic-cart-sidebar-wrapper">
-        
-        <div class="ic-cart-sidebar-wrapper_header">
-            <span><?php _e( 'Your Cart', 'wordpress' ); ?></span>
-            <div class="ic-cart-header-btn-close"><img src="/wp-content/uploads/2023/11/close.png"/></div>
-        </div>
-        <div class="ic-cart-sidebar-wrapper_body">
-            <div class="cartcontents">
-                <div class="widget_shopping_cart_content">
-                    <?php 
-                        woocommerce_mini_cart();
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php
-}
-
-
 add_action( 'wp_ajax_ic_qty_update', 'ic_qty_update' );
 add_action( 'wp_ajax_nopriv_ic_qty_update', 'ic_qty_update' );
 
