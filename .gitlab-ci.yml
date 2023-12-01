@@ -1,0 +1,13 @@
+deploy-production:
+  stage: deploy
+  only:
+    - master
+  script:
+    - cd /var/www/html/wp-content/themes/GeneratePressChild
+    - sudo -u www-data git fetch origin master
+    - sudo -u www-data git reset --hard FETCH_HEAD
+    #- sudo -H -u www-data composer install --no-dev
+  tags:
+    - master
+  variables:
+    GIT_STRATEGY: none

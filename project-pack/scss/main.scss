@@ -1,0 +1,15 @@
+.widget_shopping_cart_content {
+    .woocommerce-mini-cart {
+        .woocommerce-mini-cart-item {
+            .ic-mini-cart-count-price.ic-mini-cart-title-input {
+                line-height: 1;
+                padding-left: 10px;
+                .name-product {
+                    font-size: 15px;
+                    line-height: 1;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
