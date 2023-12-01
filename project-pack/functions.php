@@ -58,7 +58,7 @@ function ic_display_quantity_minus() {
 } 
 
 // add_action( 'woocommerce_after_quantity_input_field', 'ic_display_quantity_plus', 10, 2 );
-// add_action( 'woocommerce_before_quantity_input_field', 'ic_display_quantity_minus' );
+// add_action( 'woocommerce_before_quantity_input_field', 'ic_display_quantity_minus' ); 
 
 add_action( 'wp_ajax_ic_qty_update', 'ic_qty_update' );
 add_action( 'wp_ajax_nopriv_ic_qty_update', 'ic_qty_update' );
